@@ -188,7 +188,7 @@
                 },
                 mouseover: highlightFeature,
             });
-            var popupContent =  (feature.properties['説明'] !== null ? Autolinker.link(feature.properties['説明'].toLocaleString()) : '') <br>'<img src="'+ feature.properties.Photo +'" style="width:400px;">';
+            var popupContent =  (feature.properties['説明'] !== null ? Autolinker.link(feature.properties['説明'].toLocaleString()) : '') + <br>'<img src="'+ feature.properties.Photo +'" style="width:400px;">';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
